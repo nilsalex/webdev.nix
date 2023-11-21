@@ -10,9 +10,10 @@
       devShells.x86_64-linux.default = pkgs.mkShell {
         name = "node env";
         buildInputs = [
-          pkgs.nodejs_20
+          pkgs.nodejs_21
           pkgs.nodePackages."@tailwindcss/language-server"
           pkgs.nodePackages.typescript-language-server
+          pkgs.nodePackages.dockerfile-language-server-nodejs
         ];
       };
     };
